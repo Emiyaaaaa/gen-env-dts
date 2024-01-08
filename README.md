@@ -16,6 +16,10 @@ declare global {
 export {}
 ```
 
+![image](https://github.com/Emiyaaaaa/gen-env-dts/assets/37606228/1b26c33c-621a-46c2-a648-a5305f6a4b41)
+
+
+
 ## Install
 
 npm
