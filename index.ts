@@ -10,7 +10,11 @@ const templateArg = getArg(["--template", "-template", "--t", "-t"])
 const envPaths = inputArgs ?? [".env"]
 const outputPaths = outputArgs ?? ["env.d.ts"]
 const template =
-	templateArg ?? `${process.argv[1]!.replace(".bin", "")}/template.d.ts`
+	templateArg ??
+	`${process.argv[1]!.replace(".bin", "").replace(
+		/node_modules\/gen-env-dts\/.*?/g,
+		"node_modules/gen-env-dts",
+	)}/template.d.ts`
 const templateString = fs.readFileSync(template, "utf-8")
 
 for (const index in envPaths) {
