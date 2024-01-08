@@ -1,0 +1,25 @@
+{
+	"name": "gen-env-dts",
+	"version": "1.0.0",
+	"description": "Easily generate 'env.d.ts' files for '.env' files",
+	"author": "Haozheng Li",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"bin": {
+		"gen-env-dts": "./dist/index.js"
+	},
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "npm run build"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.4.1",
+		"@emiyaaaaa/tsconfig": "^1.0.0",
+		"@types/node": "^20.10.7",
+		"dotenv": "^16.3.1",
+		"typescript": "latest"
+	}
+}
