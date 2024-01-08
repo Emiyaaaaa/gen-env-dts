@@ -1,7 +1,7 @@
 # gen-env-dts
 Easily generate `env.d.ts` files for `.env` files
 
-## Output (Support custom template)
+### Output (Support custom template)
 ```ts
 // ./env.d.ts
 declare global {
@@ -18,9 +18,12 @@ export {}
 
 ![image](https://github.com/Emiyaaaaa/gen-env-dts/assets/37606228/1b26c33c-621a-46c2-a648-a5305f6a4b41)
 
+## Usage 1
+```bash
+npx gen-env-dts
+```
 
-
-## Install
+## Usage 2
 
 npm
 ```bash
@@ -35,11 +38,8 @@ pnpm
 pnpm add --save-dev gen-env-dts
 ```
 
-## Usage
-
-scripts
+package.json
 ```json
-// package.json
 {
   "scripts": {
     "env-dts": "gen-env-dts"
@@ -50,12 +50,13 @@ scripts
 npm run env-dts
 ```
 
-npx
-```bash
-npx gen-env-dts
-```
-
 ## Options
+- `--input` (or `-i`)
+- `--output` (or `-o`)
+- `--template` (or `-t`)
+
+
+
 ### `--input` (or `-i`)
 Input file path, default: `.env`
 ```bash
