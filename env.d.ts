@@ -1,7 +1,8 @@
 declare global {
 	namespace NodeJS {
 		interface ProcessEnv {
-			TEMPLATE_REPLACE
+			AK: string
+			SK: string
 		}
 	}
 }
