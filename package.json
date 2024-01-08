@@ -1,6 +1,6 @@
 {
 	"name": "gen-env-dts",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Easily generate 'env.d.ts' files for '.env' files",
 	"author": "Haozheng Li",
 	"main": "./dist/index.js",
@@ -8,6 +8,7 @@
 	"bin": {
 		"gen-env-dts": "./dist/index.js"
 	},
+	"files": ["dist", "template.d.ts", "README.md"],
 	"scripts": {
 		"build": "tsc",
 		"prepublishOnly": "npm run build"
