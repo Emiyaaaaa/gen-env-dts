@@ -12,8 +12,8 @@ const outputPaths = outputArgs ?? ["env.d.ts"]
 const template =
 	templateArg ??
 	`${process.argv[1]!.replace(".bin", "").replace(
-		/node_modules\/gen-env-dts\/.*?/g,
-		"node_modules/gen-env-dts",
+		/\/gen-env-dts\/.*/g,
+		"/gen-env-dts",
 	)}/template.d.ts`
 const templateString = fs.readFileSync(template, "utf-8")
 
