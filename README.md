@@ -25,20 +25,18 @@ npx gen-env-dts
 
 ## Usage 2
 
-npm
 ```bash
+# npm
 npm install --save-dev gen-env-dts
-```
-yarn
-```bash
+
+#yarn
 yarn add --dev gen-env-dts
-```
-pnpm
-```bash
+
+#pnpm
 pnpm add --save-dev gen-env-dts
 ```
 
-package.json
+./package.json
 ```json
 {
   "scripts": {
