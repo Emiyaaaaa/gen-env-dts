@@ -62,9 +62,9 @@ npx gen-env-dts -i ./path/to/env/file
 ```
 Multiple input files
 ```bash
-npx gen-env-dts -i ./path/to/env/file1 -i ./path/to/env/file2 -o ./path/to/output/file -o ./path/to/output/file2
+npx gen-env-dts -i ./path/to/env/file1 -i ./path/to/env/file2 -o ./path/to/output/file1 -o ./path/to/output/file2
 ```
->NOTE: If multiple input files are set, you need to use `--output` option to specify the output files path.
+>NOTE: If multiple input files are set, you need to use `--output` option to specify all of output files path.
 
 ### `--output` (or `-o`)
 Output file path, default: `./env.d.ts`
