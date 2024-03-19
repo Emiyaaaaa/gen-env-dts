@@ -1,10 +1,11 @@
 {
 	"name": "gen-env-dts",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "Easily generate 'env.d.ts' files for '.env' files",
 	"author": "Haozheng Li",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
+	"repository": "Emiyaaaaa/gen-env-dts",
 	"bin": {
 		"gen-env-dts": "./dist/index.js"
 	},
