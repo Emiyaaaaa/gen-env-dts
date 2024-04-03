@@ -73,12 +73,12 @@ npx gen-env-dts -o ./path/to/output/file
 ```
 
 ### `--template` (or `-t`)
-Custom template file path, default: `./template.d.ts`
+Custom template file path
 ```bash
 npx gen-env-dts -t ./path/to/template/file
 ```
 
-default:
+Default template:
 ```ts
 // ./template.d.ts
 declare global {
@@ -93,7 +93,7 @@ declare global {
 export {}
 ```
 
-your custom template:
+Your custom template:
 ```ts
 // ./my-template.d.ts
 export interface MyEnv {
@@ -103,4 +103,12 @@ export interface MyEnv {
 ```
 ```bash
 npx gen-env-dts -t ./my-template.d.ts
+```
+You will get:
+```ts
+// ./env.d.ts
+export interface MyEnv {
+	AK: string
+	SK: string
+}
 ```
