@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// biome-ignore lint/style/useNodejsImportProtocol: <explanation>
 import fs from "fs"
 import dotenv from "dotenv"
 import { getArg, getArgs } from "./utils/getArgs"
@@ -13,7 +14,7 @@ const template =
 	templateArg ??
 	`${process.argv[1]!.replace(".bin", "").replace(
 		/\/gen-env-dts\/.*/g,
-		"/gen-env-dts",
+		"/gen-env-dts"
 	)}/template.d.ts`
 const templateString = fs.readFileSync(template, "utf-8")
 
@@ -27,7 +28,7 @@ for (const index in envPaths) {
 	// generate env.d.ts string
 	const dtsString = templateString.replace(
 		/(\s*?)TEMPLATE_REPLACE/,
-		envKeys.map((k) => `$1${k}: string`).join(""),
+		envKeys.map((k) => `$1${k}: string`).join("")
 	)
 
 	// get output file path

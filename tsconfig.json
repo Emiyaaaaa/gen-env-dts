@@ -1,9 +1,9 @@
 {
 	"extends": "@emiyaaaaa/tsconfig",
-  "compilerOptions": {
-    "outDir": "dist",
-    "allowJs": true,
-    "noPropertyAccessFromIndexSignature": false,
-    "noImplicitReturns": false,
-  },
+	"compilerOptions": {
+		"outDir": "dist",
+		"allowJs": true,
+		"noPropertyAccessFromIndexSignature": false,
+		"noImplicitReturns": false
+	}
 }

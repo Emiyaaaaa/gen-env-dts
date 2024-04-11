@@ -3,6 +3,12 @@
 		"enabled": true,
 		"formatWithErrors": true
 	},
+	"javascript": {
+		"formatter": {
+			"trailingComma": "none",
+			"semicolons": "asNeeded"
+		}
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {
@@ -12,11 +18,6 @@
 			"style": {
 				"noNonNullAssertion": "warn"
 			}
-		}
-	},
-	"javascript": {
-		"formatter": {
-			"semicolons": "asNeeded"
 		}
 	}
 }
